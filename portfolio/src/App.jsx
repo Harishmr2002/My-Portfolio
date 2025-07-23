@@ -1,11 +1,22 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import Navbar from "./components/Navbar"; // ✅ You missed this import
+
 function App() {
   return (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold text-blue-600">Hi, I’m Harish 👋</h1>
-      <p className="mt-2 text-lg text-gray-700">
-        Welcome to my React portfolio project.
-      </p>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 
