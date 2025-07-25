@@ -1,13 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav style={{ padding: "10px", background: "#eee" }}>
-      <Link to="/" style={{ marginRight: "10px" }}>Home</Link>
-      <Link to="/about" style={{ marginRight: "10px" }}>About</Link>
-      <Link to="/projects" style={{ marginRight: "10px" }}>Projects</Link>
-      <Link to="/contact">Contact</Link>
+    <nav className="navbar">
+      <div className="navbar-logo">Harish.dev</div>
+      <div className="navbar-links">
+        <NavLink exact="true" to="/" className="nav-link" activeclassname="active">Home</NavLink>
+        <NavLink to="/about" className="nav-link" activeclassname="active">About</NavLink>
+        <NavLink to="/projects" className="nav-link" activeclassname="active">Projects</NavLink>
+        <NavLink to="/contact" className="nav-link" activeclassname="active">Contact</NavLink>
+      </div>
     </nav>
   );
 }
