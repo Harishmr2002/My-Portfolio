@@ -1,48 +1,42 @@
 import React from "react";
 import "./About.css";
 
-const About = () => {
+function About() {
   return (
-    <div className="about-container">
-      <h1>About Me</h1>
-      <p>
-        I'm <strong>Harish Yenmar</strong>, a passionate and detail-oriented Java Full Stack Developer with hands-on experience in building dynamic and responsive web applications. 
-        I work with technologies like <strong>Java, Spring Boot, ReactJS, JDBC, and MySQL</strong>.
-      </p>
+    <section className="about-section">
+      <div className="about-card">
+        <h2 className="title">About Me</h2>
 
-      <h2>🎓 Education</h2>
-      <p>
-        Master's in Computer Application (MCA) <br />
-        <em>Maharaja Institute of Technology, Mysore</em>
-      </p>
+        <p className="intro">
+          Hi, I'm <strong>Harish M R</strong>, a passionate <strong>Java Full Stack Developer</strong> based in Bangalore. I specialize in building robust web applications using Java, Spring Boot, React, and MySQL. I'm always eager to learn, improve, and solve real-world problems through code.
+        </p>
 
-      <h2>💻 Skills</h2>
-      <ul>
-        <li>Java</li>
-        <li>Spring Boot</li>
-        <li>ReactJS</li>
-        <li>JDBC & MySQL</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Git & GitHub</li>
-      </ul>
-
-      <h2>🚀 Career Goals</h2>
-      <p>
-        I enjoy solving real-world problems and transforming ideas into web-based applications. 
-        My goal is to become a professional full stack developer and contribute to impactful projects in the tech industry.
-      </p>
-
-      <h2>🎯 Hobbies</h2>
-      <p>
-        Apart from coding, I love exploring new tech tools, watching movies, and creating educational content on YouTube.
-      </p>
-
-      {/* Optional Resume Download */}
-      <a href="/Harish_Yenmar_Resume.pdf" download className="resume-button">
-        📄 Download Resume
-      </a>
-    </div>
+        <h3 className="subtitle">Skills</h3>
+        <div className="skills-grid">
+          <div className="skill-box">
+            <span>Java</span>
+            <div className="bar"><div className="bar-fill java"></div></div>
+          </div>
+          <div className="skill-box">
+            <span>Spring Boot</span>
+            <div className="bar"><div className="bar-fill spring"></div></div>
+          </div>
+          <div className="skill-box">
+            <span>React</span>
+            <div className="bar"><div className="bar-fill react"></div></div>
+          </div>
+          <div className="skill-box">
+            <span>MySQL</span>
+            <div className="bar"><div className="bar-fill mysql"></div></div>
+          </div>
+          <div className="skill-box">
+            <span>HTML/CSS</span>
+            <div className="bar"><div className="bar-fill html"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
-};
+}
 
 export default About;

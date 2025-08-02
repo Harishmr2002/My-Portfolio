@@ -1,39 +1,79 @@
-.about-container {
-  max-width: 800px;
-  margin: 2rem auto;
+.about-section {
+  background: #f9f9f9;
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   padding: 2rem;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-  line-height: 1.7;
+  max-width: 800px;
+  width: 100%;
 }
 
-.about-container h1 {
-  font-size: 2.2rem;
+.title {
+  font-size: 2rem;
   margin-bottom: 1rem;
-  color: #2c3e50;
+  color: #0077cc;
+  text-align: center;
 }
 
-.about-container h2 {
-  margin-top: 1.5rem;
-  color: #34495e;
+.intro {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.about-container ul {
-  padding-left: 1.2rem;
+.subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #333;
 }
 
-.resume-button {
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skill-box span {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
   display: inline-block;
-  margin-top: 2rem;
-  padding: 10px 20px;
-  background-color: #2e86de;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s ease;
 }
 
-.resume-button:hover {
-  background-color: #1b4f72;
+.bar {
+  background: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 14px;
+}
+
+.bar-fill {
+  height: 100%;
+  background: #0077cc;
+  border-radius: 20px;
+  width: 0;
+  animation: growBar 1s forwards;
+}
+
+.bar-fill.java { width: 90%; }
+.bar-fill.spring { width: 85%; }
+.bar-fill.react { width: 88%; }
+.bar-fill.mysql { width: 75%; }
+.bar-fill.html { width: 80%; }
+
+@keyframes growBar {
+  from { width: 0; }
+}
+
+@media (max-width: 768px) {
+  .about-card {
+    padding: 1.5rem;
+  }
 }
