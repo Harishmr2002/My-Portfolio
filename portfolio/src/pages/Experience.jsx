@@ -11,7 +11,7 @@ function Experience() {
           <h3 className="role">Java Full Stack Intern</h3>
           <span className="duration">Feb 2025 – Present</span>
         </div>
-        <p className="company">Skyllx Technologies Pvt Ltd · Bengaluru</p>
+        <p className="company">Skyllx Technologies Pvt Ltd | Bengaluru</p>
         <ul className="experience-list">
           <li>Developed responsive web applications using Java, Spring Core/MVC, and MySQL.</li>
           <li>Created RESTful APIs and integrated them with ReactJS frontend.</li>

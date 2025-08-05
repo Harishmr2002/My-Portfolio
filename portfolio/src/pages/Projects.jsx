@@ -5,43 +5,32 @@ import ProjectCard from "./ProjectCard";
 function Projects() {
   const projects = [
     {
-      title: "Quiz App",
-      description: "A quiz application built using React for frontend and Spring Boot for backend.",
-      tech: ["React", "Spring Boot", "MySQL"],
-      link: "https://github.com/Harishmr2002/QuizApp",
-      live: "https://quizapp-harish.netlify.app" // ✅ Replace with your real link
-    },
-    {
-      title: "Student Management",
-      description: "Core Java console app to manage students using JDBC.",
+      title: "Student Management System",
+      description: `A core Java console-based project to manage student information. 
+Implements CRUD operations with JDBC for MySQL database interaction. 
+Supports student registration, fee tracking, and data search.`,
       tech: ["Java", "JDBC", "MySQL"],
-      link: "https://github.com/Harishmr2002/StudentApp"
+      link: "https://github.com/Harishmr2002/StudentApp",
+      tags: ["#Java", "#JDBC", "#ConsoleApp"]
     },
     {
       title: "TravelLink",
-      description: "Java Full Stack project to find travel buddies with login, posts, and friend request.",
+      description: `A Java Full Stack social media-style platform to find travel buddies. 
+Includes features like user registration, login, post creation, and friend request management. 
+Implemented using JSP, Servlet, JDBC and MySQL.`,
       tech: ["JSP", "Servlet", "JDBC", "MySQL"],
-      link: "https://github.com/Harishmr2002/TravelLink"
+      link: "https://github.com/Harishmr2002/TravelLink",
+      tags: ["#FullStack", "#JavaEE", "#SocialPlatform"]
     },
     {
       title: "Quiz App",
-      description: "A quiz application built using React for frontend and Spring Boot for backend.",
+      description: `A responsive quiz application built with React for the frontend and Spring Boot for the backend. 
+It allows users to take quizzes, view scores, and track their performance. Includes admin panel for quiz management.`,
       tech: ["React", "Spring Boot", "MySQL"],
       link: "https://github.com/Harishmr2002/QuizApp",
-      live: "https://quizapp-harish.netlify.app" // ✅ Replace with your real link
+      live: "https://quizapp-harish.netlify.app",
+      tags: ["#FullStack", "#React", "#SpringBoot"]
     },
-    {
-      title: "Student Management",
-      description: "Core Java console app to manage students using JDBC.",
-      tech: ["Java", "JDBC", "MySQL"],
-      link: "https://github.com/Harishmr2002/StudentApp"
-    },
-    {
-      title: "TravelLink",
-      description: "Java Full Stack project to find travel buddies with login, posts, and friend request.",
-      tech: ["JSP", "Servlet", "JDBC", "MySQL"],
-      link: "https://github.com/Harishmr2002/TravelLink"
-    }
   ];
 
   return (

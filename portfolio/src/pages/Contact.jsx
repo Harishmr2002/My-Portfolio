@@ -10,13 +10,13 @@ function Contact() {
       {/* Contact Info */}
       <div className="contact-info">
         <p><strong>Email:</strong> <a href="mailto:harishharshamr@gmail.com">harishharshamr@gmail.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+919123456789">+91 91234 56789</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+919123456789">+91 9632364513</a></p>
       </div>
 
       {/* Contact Form */}
       <form
         className="contact-form"
-        action="https://formspree.io/f/mnqkdvle"  // Replace with your Formspree form URL
+        action="https://formspree.io/f/mpwlyzde"  // Replace with your Formspree form URL
         method="POST"
       >
         <input

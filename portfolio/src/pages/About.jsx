@@ -3,37 +3,57 @@ import "./About.css";
 
 function About() {
   return (
-    <section className="about-section">
-      <div className="about-card">
-        <h2 className="title">About Me</h2>
+    <section className="about">
+      <h2 className="about-title">About Me</h2>
 
-        <p className="intro">
-          Hi, I'm <strong>Harish M R</strong>, a passionate <strong>Java Full Stack Developer</strong> based in Bangalore. I specialize in building robust web applications using Java, Spring Boot, React, and MySQL. I'm always eager to learn, improve, and solve real-world problems through code.
+      {/* Intro Section */}
+      <div className="about-box">
+        <h3>👋 Hello!</h3>
+        <p>
+          I'm <strong>Harish M R</strong>, a passionate Java Full Stack Developer based in Bengaluru. 
+          I enjoy building responsive and efficient web applications using technologies like Java, Spring Boot, React, and MySQL.
         </p>
+      </div>
 
-        <h3 className="subtitle">Skills</h3>
-        <div className="skills-grid">
-          <div className="skill-box">
-            <span>Java</span>
-            <div className="bar"><div className="bar-fill java"></div></div>
-          </div>
-          <div className="skill-box">
-            <span>Spring Boot</span>
-            <div className="bar"><div className="bar-fill spring"></div></div>
-          </div>
-          <div className="skill-box">
-            <span>React</span>
-            <div className="bar"><div className="bar-fill react"></div></div>
-          </div>
-          <div className="skill-box">
-            <span>MySQL</span>
-            <div className="bar"><div className="bar-fill mysql"></div></div>
-          </div>
-          <div className="skill-box">
-            <span>HTML/CSS</span>
-            <div className="bar"><div className="bar-fill html"></div></div>
-          </div>
+      {/* Skills Section */}
+      <div className="about-box">
+        <h3>🛠️ Skills</h3>
+        <div className="skill">
+          <label>Java</label>
+          <div className="bar"><span style={{ width: "80%" }}></span></div>
         </div>
+        <div className="skill">
+          <label>Spring Boot</label>
+          <div className="bar"><span style={{ width: "76%" }}></span></div>
+        </div>
+        <div className="skill">
+          <label>React</label>
+          <div className="bar"><span style={{ width: "78%" }}></span></div>
+        </div>
+        <div className="skill">
+          <label>MySQL</label>
+          <div className="bar"><span style={{ width: "75%" }}></span></div>
+        </div>
+      </div>
+
+      {/* Education Section */}
+      <div className="about-box">
+        <h3>🎓 Education</h3>
+        <p>
+          <strong>MCA</strong> – Maharaja Institute of Technology, Mysore <br />
+          <em>Post Graduated: 2024</em>
+        </p>
+      </div>
+
+      {/* Personal Info Section */}
+      <div className="about-box">
+        <h3>👤 Personal Info</h3>
+        <ul>
+          <li><strong>Name:</strong> Harish M R</li>
+          <li><strong>Email:</strong> harishharshamr@gmail.com</li>
+          <li><strong>Phone:</strong> +91-9632364513</li>
+          <li><strong>Location:</strong> Bengaluru, India</li>
+        </ul>
       </div>
     </section>
   );

@@ -1,30 +1,22 @@
 import React from "react";
-import "./Projects.css";
 
-function ProjectCard({ title, description, tech, link, live }) {
+function ProjectCard({ title, description, tech, link, live, tags }) {
   return (
     <div className="project-card">
       <h3>{title}</h3>
-      <p>{description}</p>
-      <p>
-        <strong>Tech Stack:</strong> {tech.join(", ")}
-      </p>
+      <p style={{ whiteSpace: "pre-line" }}>{description}</p>
+      <p><strong>Tech Stack:</strong> {tech.join(", ")}</p>
+      {tags && (
+        <div className="project-tags">
+          {tags.map((tag, i) => (
+            <span key={i} className="tag">{tag}</span>
+          ))}
+        </div>
+      )}
       <div className="project-links">
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="project-link"
-        >
-          GitHub
-        </a>
+        <a href={link} target="_blank" rel="noopener noreferrer" className="project-link">GitHub</a>
         {live && (
-          <a
-            href={live}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-link live-link"
-          >
+          <a href={live} target="_blank" rel="noopener noreferrer" className="project-link live-link">
             Live Demo
           </a>
         )}

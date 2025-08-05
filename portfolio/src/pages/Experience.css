@@ -24,6 +24,7 @@
 }
 
 .experience-item:hover {
+  background-color: #e6f7ff;
   transform: translateY(-5px);
 }
 
