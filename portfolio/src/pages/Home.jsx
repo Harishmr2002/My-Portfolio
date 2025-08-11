@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
-import myPhoto from "../assets/Me.jpeg"; // Image inside src/assets
+import myPhoto from "../assets/Me.jpeg";
 
 function Home() {
   return (
@@ -18,9 +19,9 @@ function Home() {
           <a href="/Harish_M_R.pdf" download className="btn">
             📄 Download Resume
           </a>
-          <a href="/contact" className="btn secondary">
+          <Link to="/contact" className="btn secondary">
             Contact Me
-          </a>
+          </Link>
         </div>
       </div>
 

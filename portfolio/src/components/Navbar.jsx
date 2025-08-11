@@ -5,7 +5,6 @@ import "./Navbar.css";
 function Navbar() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -13,33 +12,14 @@ function Navbar() {
       if (window.innerWidth > 768) setMenuOpen(false);
     };
     window.addEventListener("resize", handleResize);
-
-    // Load theme from localStorage
-    const savedTheme = localStorage.getItem("darkMode");
-    if (savedTheme === "true") {
-      setDarkMode(true);
-      document.body.classList.add("dark-mode");
-    }
-
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
-  const toggleDarkMode = () => {
-    const newMode = !darkMode;
-    setDarkMode(newMode);
-    document.body.classList.toggle("dark-mode", newMode);
-    localStorage.setItem("darkMode", newMode);
-  };
-
   return (
     <nav className="navbar">
       <div className="navbar-logo">Harish.dev</div>
-
-      <button className="theme-toggle" onClick={toggleDarkMode}>
-        {darkMode ? "🌞" : "🌙"}
-      </button>
 
       {isMobile ? (
         <>
